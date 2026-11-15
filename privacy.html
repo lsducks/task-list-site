@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Task List Privacy Policy</title>
+  <meta name="description" content="How the Task List Chrome extension handles your data.">
+  <link rel="icon" href="icon-128.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header><img src="icon-128.png" alt=""><a href="./">Task List</a></header>
+  <h1>Privacy Policy</h1>
+  <p class="muted">Effective date: November 15, 2026</p>
+
+  <p>Task List is a Chrome extension for tasks and lists. This policy explains what data it handles, why, where the data is kept and how you can export or delete it.</p>
+
+  <div class="card">
+    <strong>In short:</strong> Task List stores only what you put into it, so your tasks can sync between your devices. There are no ads, no analytics and no tracking. Your browsing history is not collected, and your data is never sold or shared for any other purpose.
+  </div>
+
+  <h2>What data Task List handles</h2>
+  <ul>
+    <li><strong>Your content:</strong> lists, sections, labels, tasks (title, description, due date, reminder, priority), comments and files you attach to tasks.</li>
+    <li><strong>Settings:</strong> your Task List preferences, such as the theme, the badge and the default reminder.</li>
+    <li><strong>A page you choose to save:</strong> when you add a task from a web page (context menu, keyboard shortcut or Quick Add), the task stores that page's address and title. This happens only when you ask for it. Task List does not read other pages or your browsing history.</li>
+    <li><strong>Device information:</strong> Task List has no sign-in. Each Chrome profile gets an anonymous device identifier and a label such as “Chrome on macOS”, so you can see and manage the devices connected to your account.</li>
+    <li><strong>Technical data:</strong> like any web service, our hosting provider processes IP addresses and request logs to deliver the service, limit abuse and keep it secure.</li>
+  </ul>
+  <p>Task List does not collect names, email addresses, location, health, financial or authentication information, web history, or what you type on websites.</p>
+
+  <h2>How the data is used</h2>
+  <p>Only to provide Task List's features: to show your tasks, sync them across your connected devices, show reminders and keep your data safe. Your data is not used for advertising or profiling, and is not used to train AI models.</p>
+
+  <h2>Where the data is stored</h2>
+  <ul>
+    <li><strong>On your device:</strong> a copy of your data is kept in the extension's local storage, so Task List works offline.</li>
+    <li><strong>In the cloud:</strong> data is synced through <a href="https://supabase.com/privacy">Supabase</a> (servers in the European Union). Attachments are stored in a private storage bucket that only your account can access.</li>
+    <li><strong>Backups:</strong> encrypted connections are used to copy the database to a private server operated by the developer every night. Attachment files are copied there weekly.</li>
+  </ul>
+
+  <h2>How long the data is kept</h2>
+  <ul>
+    <li>Your data is kept for as long as you use Task List.</li>
+    <li>Items you delete are erased from the server 30 days later, together with their attachment files.</li>
+    <li>Database backups are kept for 14 days; copies of deleted attachment files are kept for up to 28 days after they are removed from the weekly copy.</li>
+  </ul>
+
+  <h2>Your choices</h2>
+  <ul>
+    <li><strong>Export:</strong> Settings → Data → <em>Export data</em> downloads a JSON file with all your lists, tasks, comments, settings and the names and sizes of your attachments.</li>
+    <li><strong>Delete:</strong> Settings → Account → <em>Delete account</em> permanently deletes your account, all its data and attachment files from the server and from every connected device. Backups containing it expire within 35 days.</li>
+    <li><strong>Notifications</strong> are off until you turn them on for a device, and can be turned off again at any time.</li>
+    <li><strong>Uninstalling</strong> the extension removes its local data from that Chrome profile.</li>
+  </ul>
+
+  <h2>Sharing</h2>
+  <p>Your data is not sold, rented or shared with third parties. It is processed only by the service providers needed to run Task List (Supabase for hosting), under their data processing terms. It may be disclosed only if required by law.</p>
+
+  <h2>Chrome Web Store Limited Use</h2>
+  <p>The use of information received from Chrome APIs adheres to the <a href="https://developer.chrome.com/docs/webstore/program-policies/policies">Chrome Web Store User Data Policy</a>, including the Limited Use requirements. Data is used only to provide and improve Task List's single purpose — managing your tasks — and is not transferred, used or sold for any other purpose.</p>
+
+  <h2>Permissions</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Permission</th><th>Why Task List needs it</th></tr></thead>
+      <tbody>
+        <tr><td>storage</td><td>Keeps the device's anonymous session and per-device preferences.</td></tr>
+        <tr><td>alarms</td><td>Schedules reminders and periodic sync.</td></tr>
+        <tr><td>notifications</td><td>Shows reminders for tasks with a due date (only when you turn them on).</td></tr>
+        <tr><td>sidePanel</td><td>Lets you open Task List in Chrome's side panel.</td></tr>
+        <tr><td>contextMenus</td><td>Adds “Add to Task List” to the right-click menu.</td></tr>
+        <tr><td>activeTab</td><td>Reads the address and title of the current tab only when you ask to save it as a task.</td></tr>
+        <tr><td>Access to the sync server</td><td>Syncs your data with Task List's own server; no other websites are accessed.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Security</h2>
+  <p>All connections use HTTPS. Access to data is restricted on the server so that each account can reach only its own data. Content you enter is displayed as text, never run as code.</p>
+
+  <h2>Children</h2>
+  <p>Task List is not directed to children under 13 and does not knowingly collect their data.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the new version will be published on this page with a new effective date. Significant changes will also be announced in the extension's Chrome Web Store listing.</p>
+
+  <h2>Contact</h2>
+  <p>Questions or requests about your data: <a href="https://github.com/lsducks/task-list-site/issues">open an issue</a> on the Task List site repository.</p>
+
+  <footer class="muted">Task List · <a href="./">Home</a></footer>
+</main>
+</body>
+</html>
